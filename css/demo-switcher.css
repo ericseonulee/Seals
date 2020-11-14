@@ -1,0 +1,256 @@
+.demo-switcher,
+.demo-switcher h1,
+.demo-switcher h2,
+.demo-switcher h3,
+.demo-switcher h4,
+.demo-switcher h5,
+.demo-switcher h6 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+.demo-switcher {
+    background: #171717;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 100000000000000;
+    border-radius: 0;
+    right: -250px;
+    transition: right 0.2s;
+}
+
+.form-group {
+    color: #999;
+}
+
+.demo-switcher.active {
+    right: 0;
+}
+
+.demo-switcher .demo-switcher-wrap {
+    height: 100%;
+    margin: 0;
+    overflow-y: auto;
+    padding: 15px;
+    position: relative;
+}
+
+.demo-switcher h4 {
+    background: #171717;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 30px;
+    margin: 0 0 7px;
+    padding: 0;
+}
+
+.demo-switcher h5 {
+    color: #999;
+    margin: 0 0 2px;
+    padding: 0;
+    line-height: 30px;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.demo-switcher .demo-switcher-open {
+    background-color: #171717;
+    display: block;
+    height: 40px;
+    position: absolute;
+    left: -40px;
+    top: 135px;
+    width: 40px;
+    font-size: 17px;
+    line-height: 42px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px 0px 0px 6px;
+}
+
+.demo-switcher .form-control {
+    background-color: #fff !important;
+    border: 1px solid #ccc !important;
+}
+
+.demo-switcher .btn-container {
+    margin-bottom: 0.25rem;
+}
+
+.demo-switcher .colorpicker-element {
+    margin: -3px 0 7px;
+}
+
+.colorpicker.colorpicker-visible {
+    z-index: 999999999;
+}
+
+.demo-switcher ul.options {
+    list-style: none;
+    margin: -3px 0 10px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.demo-switcher ul.options li {
+    float: right;
+    margin: 2px;
+}
+
+.demo-switcher ul.options li a {
+    display: block;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.demo-switcher ul.options li a.pattern {
+    background: transparent repeat 0 0;
+}
+
+.demo-switcher .color-picker {
+    display: none;
+    margin-bottom: 15px;
+}
+
+.demo-switcher .options-links {
+    padding: 0 0 10px;
+}
+
+.demo-switcher .options-links a {
+    background-color: #000;
+    color: #ccc;
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-right: 5px;
+    padding: 5px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.demo-switcher .options-links a:last-child {
+    margin-right: 0;
+}
+
+.demo-switcher .options-links a:hover {
+    background-color: #262626;
+    color: white;
+}
+
+.demo-switcher .options-links a.active {
+    background: #fff;
+    color: #666;
+}
+
+.demo-switcher .demo-switcher-buttons {
+    border-top: 1px solid #000;
+    margin-top: 15px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.demo-switcher .demo-switcher-buttons a {
+    padding: 8px;
+    font-size: 13px;
+    display: inline-block;
+}
+
+.demo-switcher .demo-switcher-buttons .reset {
+    width: 74px;
+}
+
+.demo-switcher .demo-switcher-buttons .get-css {
+    width: 137px;
+    font-weight: 700;
+}
+
+.demo-switcher .demo-switcher-buttons .get-css i {
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+textarea.get-css {
+    height: 325px;
+    width: 100%;
+    resize: none;
+    cursor: text;
+}
+
+.demo-switcher .theme {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 4px;
+    margin: 2px;
+    background-size: cover;
+}
+
+.demo-switcher .theme.selected {
+    border: 2px solid #00c7ff;
+}
+
+.demo-switcher .theme.chiller-theme {
+    background: #1d1d1d;
+}
+
+.demo-switcher .theme.ice-theme {
+    background: #2b3a42;
+}
+
+.demo-switcher .theme.light-theme {
+    background: #f1f0ed;
+}
+
+.demo-switcher .theme.cool-theme {
+    background: #38373d;
+}
+
+.demo-switcher .theme.green-theme {
+    background: #2c5e2e;
+}
+
+.demo-switcher .theme.spicy-theme {
+    background: #8e2800;
+}
+
+.demo-switcher .theme.purple-theme {
+    background: #372049;
+}
+
+#demoCSS {
+    font-size: 12px;
+}
+
+/*--------------Sidebar BG----------------*/
+[data-bg="1"] {
+    background-image: url(../img/sidebar/bg1.jpg);
+}
+
+[data-bg="2"] {
+    background-image: url(../img/sidebar/bg2.jpg);
+}
+
+[data-bg="3"] {
+    background-image: url(../img/sidebar/bg3.jpg);
+}
+
+[data-bg="4"] {
+    background-image: url(../img/sidebar/bg4.jpg);
+}
+
+.demo-switcher .page-loader {
+    margin: 0.10rem;
+}
+
+.demo-switcher .page-loader.selected {
+    margin: 0.10rem;
+    background-color: #6c757d;
+    color: #eeeeee;
+}
+
+/*   */
