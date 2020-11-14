@@ -189,14 +189,21 @@ Seals.UI = {
                         var publication_container = $("#publicationsList .pubItems");
                         var publication_list = $("#publicationsList .pubItems .item");
 
-                        for (let i = 0; i < publication_list.length; i++) {
-                            let pubtitle = $(publication_list[i]).find(".pubDetail")[0];
-                            if (pubtitle) {
-                                let txtValue = pubtitle.textContent || pubtitle.innerText;
-                                if (txtValue.toLowerCase().indexOf(filter) > -1) {
-                                    publication_list[i].style.display = "inline-block";
-                                } else {
-                                    publication_list[i].style.display = "none";
+                        if (!document.getElementById("searchInput").value) {
+                            let publication_list = $("#publicationsList .pubItems .item");
+                            for (let i = 0; i < publication_list.length; i++) {
+                                publication_list[i].style.display = "inline-block";
+                            }
+                        } else {
+                            for (let i = 0; i < publication_list.length; i++) {
+                                let pubtitle = $(publication_list[i]).find(".pubDetail")[0];
+                                if (pubtitle) {
+                                    let txtValue = pubtitle.textContent || pubtitle.innerText;
+                                    if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                                        publication_list[i].style.display = "inline-block";
+                                    } else {
+                                        publication_list[i].style.display = "none";
+                                    }
                                 }
                             }
                         }
@@ -206,12 +213,13 @@ Seals.UI = {
                     $('#searchbar input#searchInput').keyup(function(e) {
                         if (e.which == 13) {
                             $('#searchbar button#searchButton').click();
-                        } else if ((e.which == 8 || e.which == 46) && !document.getElementById("searchInput").value) {
-                            let publication_list = $("#publicationsList .pubItems .item");
-                            for (let i = 0; i < publication_list.length; i++) {
-                                publication_list[i].style.display = "inline-block";
-                            }
                         }
+                        // else if ((e.which == 8 || e.which == 46) && !document.getElementById("searchInput").value) {
+                        //     let publication_list = $("#publicationsList .pubItems .item");
+                        //     for (let i = 0; i < publication_list.length; i++) {
+                        //         publication_list[i].style.display = "inline-block";
+                        //     }
+                        // }
                     });
                 }
             }
