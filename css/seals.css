@@ -128,7 +128,7 @@
     border: 1px solid #707070;
     width: 150px;
     height: 250px;
-    background-color: #de8d3a;
+    background-color: #f5863c;
     line-height: 16px;
     color: #ffffff;
     font-size: 11px;
@@ -144,7 +144,7 @@
 }
 
 #about_content .content #contacts a {
-    color: #707070;
+    color: #17406a;
 }
 
 #about_content .content #introduction_bio {
@@ -161,20 +161,6 @@
     font-size: 16px;
 }
 
-#about_content .education {
-    width: 70%;
-    height: 200px;
-    margin: auto;
-    text-align: center;
-    vertical-align: middle;
-}
-
-#about_content .education #edu_title {
-    font-size: 16px;
-    margin-bottom: 20px;
-    padding-top: 20px;
-}
-
 
 /* teaching */
 
@@ -183,7 +169,8 @@
     flex-direction: row;
 }
 
-#main #teaching_content #teachingLSB {
+
+/* #main #teaching_content #teachingLSB {
     min-width: 180px;
     margin-left: 13%;
     background-color: #acacac;
@@ -237,7 +224,7 @@
 #main #teaching_content #teachingLSB .tlsbSection .active {
     background-color: #d1d1d1;
     font-weight: bold;
-}
+} */
 
 #main #teaching_content .content {
     padding-top: 5px;
@@ -247,16 +234,20 @@
     display: flex;
     flex-direction: column;
     color: #707070;
-    width: 75%;
+    width: 50%;
+    margin: auto;
 }
 
 #main #teaching_content .content .classSection {
     display: flex;
     flex-direction: column;
-    padding: 20px 250px 20px 30px;
-    margin-bottom: 10px;
-    min-height: 140px;
+    padding: 20px 80px 10px 120px;
+    max-height: ;
     border-bottom: 1px solid #414042;
+}
+
+#main #teaching_content .content .classSection:last-child {
+    border-bottom: none;
 }
 
 #main #teaching_content .content .classSection .classTitle {
@@ -685,7 +676,7 @@
     height: 34px;
     width: 20%;
     padding: 10px;
-    background: #de8d3a;
+    background: #f5863c;
     color: white;
     font-size: 15px;
     line-height: 15px;
@@ -695,7 +686,7 @@
 }
 
 #main #publications_content #searchbar button:hover {
-    background: #fa9e42;
+    background: #f56e14;
 }
 
 
