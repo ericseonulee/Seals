@@ -34,20 +34,18 @@
 }
 
 #header .header_title {
-    font-size: 20px;
+    font-size: 25px;
     width: 60%;
     padding-left: 50px;
-    padding-bottom: 30px;
-    align-items: center;
     color: #7A7A7A;
-    text-align: center;
+    text-align: right;
     display: inline-block;
     vertical-align: middle;
     -webkit-user-select: none;
 }
 
-#header .header_title :first-child {
-    font-size: 30px;
+#header .header_title p:first-child {
+    font-size: 16px;
 }
 
 #header .header_title p {
@@ -63,6 +61,7 @@
     flex-wrap: nowrap;
     background-color: #17406a;
     justify-content: center;
+    margin-top: 30px;
 }
 
 #nav_menu.flex-container>.nav_link {
@@ -101,7 +100,7 @@
 }
 
 #about_content .content {
-    width: 50%;
+    width: 60%;
     margin: auto;
     white-space: nowrap;
     height: 100%;
@@ -149,7 +148,6 @@
 }
 
 #about_content .content #introduction_bio {
-    background-color: #f0f0f0;
     padding: 30px;
     display: inline-block;
     white-space: normal;
@@ -164,8 +162,7 @@
 }
 
 #about_content .education {
-    background-color: #f0f0f0;
-    width: 100%;
+    width: 70%;
     height: 200px;
     margin: auto;
     text-align: center;
