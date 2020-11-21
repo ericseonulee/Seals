@@ -200,9 +200,13 @@ Seals.UI = {
                             }
                         } else {
                             for (let i = 0; i < publication_list.length; i++) {
-                                let pubtitle = $(publication_list[i]).find(".pubDetail")[0];
-                                if (pubtitle) {
-                                    let txtValue = pubtitle.textContent || pubtitle.innerText;
+                                let pubTitle = $(publication_list[i]).find(".pubTitle")[0];
+                                let pubNames = $(publication_list[i]).find(".pubNames")[0];
+                                let pubDetail = $(publication_list[i]).find(".pubDetail")[0];
+
+
+                                if (pubTitle || pubNames || pubDetail) {
+                                    let txtValue = (pubTitle.textContent || pubTitle.innerText) + (pubNames.textContent || pubNames.innerText) + (pubDetail.textContent || pubDetail.innerText);
                                     if (txtValue.toLowerCase().indexOf(filter) > -1) {
                                         publication_list[i].style.display = "inline-block";
                                     } else {
