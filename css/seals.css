@@ -21,6 +21,7 @@
     margin-left: 230px;
     margin-top: 30px;
     margin-bottom: 15px;
+    font-family: "Roboto", sans-serif;
 }
 
 #header .header_logo {
@@ -35,7 +36,7 @@
 
 #header .header_title {
     font-size: 25px;
-    width: 60%;
+    width: 70%;
     padding-left: 50px;
     color: #7A7A7A;
     text-align: right;
@@ -65,7 +66,7 @@
 }
 
 #nav_menu.flex-container>.nav_link {
-    width: 100px;
+    width: 173px;
     padding: 10px;
     text-align: center;
     display: inline-block;
@@ -86,7 +87,6 @@
 #nav_menu.flex-container>.nav_link.activeTab {
     background-color: #3d5c7a;
     font-size: bold;
-    text-decoration: underline;
 }
 
 
@@ -95,17 +95,18 @@
 #about_content {
     width: 100%;
     color: #707070;
-    margin-top: 40px;
     margin-bottom: 100px;
 }
 
 #about_content .content {
-    width: 60%;
-    margin: auto;
+    width: 100%;
     white-space: nowrap;
+    padding: 70px 300px;
+    background-color: #f0f0f0;
     height: 100%;
     display: flex;
     flex-direction: row;
+    margin-bottom: 70px;
 }
 
 #about_content .content #introduction_info {
@@ -114,18 +115,36 @@
 }
 
 #about_content .content #introduction_info #profile_img {
-    border: 1px solid black;
     width: 150px;
     height: 200px;
     line-height: 200px;
-    margin: 0 40px 50px 0;
+    margin: 0 40px 15px 0;
     text-align: center;
     background-image: url("../img/seals_cheryl.png");
 }
 
+#about_content .content #introduction_info .cvButton {
+    margin-right: 40px;
+}
+
+#about_content .content #introduction_info .btn-auburn {
+    font-size: 12px;
+    margin-bottom: 5px;
+    background-color: #17406a;
+    border: none;
+    width: 130px;
+}
+
+#about_content .content #introduction_info .btn-auburn:focus {
+    color: #ffffff;
+}
+
+#about_content .content #introduction_info .btn-auburn:hover {
+    background-color: #3d5c7a;
+}
+
 #about_content .content #introduction_info #contacts {
     display: inline-block;
-    border: 1px solid #707070;
     width: 150px;
     height: 250px;
     background-color: #f5863c;
@@ -148,7 +167,7 @@
 }
 
 #about_content .content #introduction_bio {
-    padding: 30px;
+    padding: 0 30px;
     display: inline-block;
     white-space: normal;
     text-align: left;
@@ -158,7 +177,17 @@
 }
 
 #about_content .content #introduction_bio>p {
-    font-size: 16px;
+    font-size: 24px;
+}
+
+#about_content .education {
+    width: 70%;
+    margin: auto;
+}
+
+#about_content .education #education,
+#about_content .education #honors {
+    color: #707070 !important;
 }
 
 
