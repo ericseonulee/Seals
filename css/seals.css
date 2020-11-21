@@ -549,12 +549,12 @@
 #main #projects_content {
     width: 70%;
     margin: auto;
-    padding-top: 30px;
+    padding-top: 5px;
 }
 
 #main #projects_content #myCarousel {
     width: 100%;
-    height: 450px;
+    height: 500px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px 0px;
 }
 
@@ -590,6 +590,35 @@
 #main #projects_content #myCarousel .carousel-inner .item>img {
     height: 100%;
     width: 100%;
+}
+
+#main #projects_content #myCarousel .carousel-inner #projectList {
+    height: 50%;
+    top: 0;
+    width: 100%;
+    color: #707070;
+    text-shadow: none;
+    background-color: #F0F0F0;
+    font-size: 13px;
+    padding: 5px 80px;
+}
+
+#main #projects_content #myCarousel .carousel-inner #projectList>p {
+    padding-left: 50px;
+}
+
+#main #projects_content #myCarousel .carousel-inner .researchStatement {
+    font-size: 13px;
+    height: 46%;
+    top: 50%;
+    width: 100%;
+    color: #707070;
+    text-shadow: none;
+    background-color: white;
+    left: 0 !important;
+    text-align: left;
+    text-overflow: ellipsis;
+    padding: 0 80px !important;
 }
 
 #main #projects_content #myCarousel .carousel-inner .carousel-caption {
