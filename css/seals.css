@@ -741,7 +741,7 @@
 }
 
 #main #publications_content #publicationsList .pubItems {
-    margin: 0px 100px;
+    margin: 0px 40px;
     display: grid;
     gap: 25px;
     /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -774,6 +774,20 @@
 
 #main #publications_content #publicationsList .pubItems .item:hover {
     background-color: #F3F3F3;
+}
+
+#main #publications_content #publicationsList .pubItems .item .pubTitle {
+    font-size: 16px;
+}
+
+#main #publications_content #publicationsList .pubItems .item .pubNames {}
+
+#main #publications_content #publicationsList .pubItems .item .pubDetail {
+    font-size: 12px;
+}
+
+#main #publications_content #publicationsList .pubItems .item .pubDetail .badge {
+    font-size: 10px;
 }
 
 .divider {
