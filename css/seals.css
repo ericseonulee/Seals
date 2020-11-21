@@ -276,7 +276,7 @@
 }
 
 #main #teaching_content .content .classSection .classTitle {
-    font-size: 18px;
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
@@ -326,6 +326,7 @@
 
 #main #students_content .content .studentType {
     margin: 30px 0;
+    font-size: 24px;
 }
 
 #main #students_content .content .studentGrid .student {
@@ -356,7 +357,6 @@
 
 #main #students_content .content .studentGrid .student .headshot {
     margin: 20px 20px 15px 20px;
-    border: 1px solid #B0B0B0;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -432,6 +432,7 @@
     width: 25%;
     text-align: left;
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #main #students_content .content .studentList .studentHeader .website,

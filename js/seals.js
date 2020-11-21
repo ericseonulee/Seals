@@ -145,6 +145,10 @@ Seals.UI = {
                     document.title = this.title;
                     container.html(Seals.UI.Templates.students_template);
                     this.bindEvents(container);
+
+                    $("#students_content .content .studentList .studentRow .position").each(function() {
+                        $(this).attr("title", $(this).html());
+                    });
                 },
                 bindEvents: function(container) {}
             },
