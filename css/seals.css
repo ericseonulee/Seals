@@ -469,7 +469,6 @@
 #main #involvement_content .content {
     padding-top: 30px;
     transition: 0.3s;
-    height: 100vh;
     width: 60%;
     margin: auto;
     white-space: nowrap;
@@ -479,12 +478,13 @@
 }
 
 #main #involvement_content .content .involvementItem {
-    border: 1px solid #707070;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px 0px;
     white-space: normal;
     display: flex;
     flex-direction: row;
     max-height: 200px;
     text-overflow: ellipsis;
+    margin: 50px 0;
 }
 
 #main #involvement_content .content .involvementItem .involvementItemLeftText,
@@ -496,7 +496,7 @@
 
 #main #involvement_content .content .involvementItem .involvementItemLeftText .eventTitle,
 #main #involvement_content .content .involvementItem .involvementItemRightText .eventTitle {
-    font-size: 18px;
+    font-size: 24px;
     margin-bottom: 20px;
 }
 
@@ -506,7 +506,6 @@
 }
 
 #main #involvement_content .content .involvementItem .involvementItemRightImg {
-    border-left: 1px solid #707070;
     background-color: #f5f5f5;
     width: 25%;
     display: inline-block;
@@ -519,7 +518,6 @@
 }
 
 #main #involvement_content .content .involvementItem .involvementItemLeftImg {
-    border-right: 1px solid #707070;
     background-color: #f5f5f5;
     width: 25%;
     display: inline-block;
@@ -531,29 +529,18 @@
     text-align: center;
 }
 
-#main #involvement_content .content #externalPages #externalPagesTitle {
-    font-size: 18px;
-    margin-bottom: 20px;
+#main #involvement_content .content .involvementItem a {
+    color: #707070;
 }
 
-#main #involvement_content .content #externalPages #externalLinks {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+#main #involvement_content .content .involvementItem a:hover {
+    color: #337ab7;
+    text-decoration: none;
 }
 
-#main #involvement_content .content #externalPages #externalLinks>* {
-    margin: 0 50px;
-}
-
-#main #involvement_content .content #externalPages #externalLinks>a {
-    target-name: new;
-    target-new: tab;
-}
-
-#main #involvement_content .divider {
-    width: 100vw;
-    margin-left: -33.33%;
+#main #involvement_content .content .involvementItem a:focus {
+    color: #337ab7;
+    text-decoration: none;
 }
 
 
@@ -568,7 +555,7 @@
 #main #projects_content #myCarousel {
     width: 100%;
     height: 450px;
-    border: 1px solid #707070;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px 0px;
 }
 
 #main #projects_content #myCarousel .carousel-indicators {
