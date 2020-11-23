@@ -265,6 +265,16 @@
     color: #707070;
 }
 
+#main #students_content a .fa-linkedin-square {
+    color: #0073b1 !important;
+    cursor: pointer !important;
+}
+
+#main #students_content .fa-linkedin-square {
+    color: #707070 !important;
+    cursor: default !important;
+}
+
 #main #students_content .content .studentGrid {
     margin: 0px 15px 15px;
     display: grid;
